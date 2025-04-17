@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# 🧪 LifeQuest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ⚠️ Проект находится в активной разработке.
 
-Currently, two official plugins are available:
+LifeQuest — это веб-приложение-трекер привычек с элементами геймификации: вы создаёте привычки, отслеживаете прогресс и прокачиваете уровень персонажа, получая очки за выполненные действия.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚧 Статус
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![WIP](https://img.shields.io/badge/status-in_development-yellow?style=flat-square&logo=github)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📌 Возможности (в планах)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [x] Инициализация проекта на Vite + React + TypeScript
+- [ ] Настройка ESLint + Prettier
+- [ ] Redux Toolkit для привычек и прогресса
+- [ ] Система уровней и очков
+- [ ] Статистика, streak, графики
+- [ ] GitHub Actions для CI/CD
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🗂 Стек
+
+Vite, React, TypeScript, Redux Toolkit, Styled Components, Framer Motion, GitHub Actions, Vitest
+
+---
