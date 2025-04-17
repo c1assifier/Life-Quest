@@ -29,6 +29,7 @@ export default defineConfig([
       ...pluginReact.configs.flat.recommended.rules,
       'react/react-in-jsx-scope': 'off',
       'react/jsx-no-target-blank': 'off',
+      quotes: ['error', 'single'],
     },
   },
   {
