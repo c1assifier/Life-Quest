@@ -1,5 +1,6 @@
 {
   "name": "life-quest",
+  "homepage": "https://c1assifier.github.io/Life-Quest/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +11,12 @@
     "format": "prettier --write .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
