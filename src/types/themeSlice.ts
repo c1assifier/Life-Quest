@@ -1,3 +1,3 @@
 export type ThemeState = {
-    theme: 'light' | 'dark'
-}
+  theme: 'light' | 'dark';
+};

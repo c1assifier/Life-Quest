@@ -1,4 +1,4 @@
 export type LevelState = {
-    level: number,
-    xp: number
-}
+  level: number;
+  xp: number;
+};
